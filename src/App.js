@@ -7,7 +7,11 @@ import {
 import Header from './Header'
 import Home from './Home'
 import Sobre from './Sobre'
+import Contato from './Contato'
+import Campanhas from './Campanhas'
 import Footer from './Footer'
+
+import base from './base'
 
 class App extends Component {
   render(){
@@ -17,6 +21,8 @@ class App extends Component {
           <Header />
           <Route exact path='/' component={Home} /> 
           <Route exact path='/sobre' component={Sobre} /> 
+          <Route exact path='/contato' component={Contato} />
+          <Route exact path='/campanhas' component={Campanhas} /> 
           <Footer />
         </div>
       </Router>
